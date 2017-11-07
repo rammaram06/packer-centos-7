@@ -3,12 +3,10 @@
     {
       "type": "shell",
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
-      "override": {
         "scripts": [
            "scripts/ansible.sh",
            "scripts/provision.sh"
         ]
-      }
     },
     {
       "type": "ansible-local",
